@@ -1,26 +1,11 @@
-from mysql import connector
+from banco_dados import conectar    
 from datetime import date
 import os
 # pip install mysql-connector-python
 # py -m pip install mysql-connector-python
+# pip install python-dotenv
+# py -m pip install python-dotenv
 
-HOST = "127.0.0.1"
-PORTA = 3306
-USUARIO = "root"
-SENHA = "admin"
-BANCO = "restau_calabresa"
-
-
-def conectar():
-    """Abre a conexão com o banco de dados"""
-    conexao = connector.connect(
-        host=HOST,
-        port=PORTA,
-        user=USUARIO,
-        password=SENHA,
-        database=BANCO,
-    )
-    return conexao
 
 
 def cadastrar():

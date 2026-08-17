@@ -1,25 +1,9 @@
-from mysql import connector
+
+from banco_dados import conectar
 from datetime import date
 import os
 # pip install mysql-connector-python
 # py -m pip install mysql-connector-python
-
-HOST = "127.0.0.1"
-PORTA = 3306
-USUARIO = "root"
-SENHA = "admin"
-BANCO = "restau_calabresa"
-
-
-def conectar():
-    conexao = connector.connect(
-        host=HOST,
-        port=PORTA,
-        user=USUARIO,
-        password=SENHA,
-        database=BANCO,
-    )
-    return conexao
 
 
 def cadastrar_prato():
