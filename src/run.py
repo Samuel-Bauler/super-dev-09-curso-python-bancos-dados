@@ -1,6 +1,8 @@
 from funcionario import menu_funcionario
 from pratos_feitos import menu_pratos_feitos
 from clientes import menu_clientes
+from bebidas import menu_bebidas
+from mesas import menu_mesas
 import os
 
 
@@ -28,6 +30,10 @@ Digite a opção desejada: """
             menu_pratos_feitos()
         elif opcao == 3:
             menu_clientes()
+        elif opcao == 4:
+            menu_bebidas()
+        elif opcao == 5:
+            menu_mesas()
         elif opcao != 10:
 
             print("Opção invalida")

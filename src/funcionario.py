@@ -6,7 +6,7 @@ import os
 
 HOST = "127.0.0.1"
 PORTA = 3306
-USUARIO = "dev"
+USUARIO = "root"
 SENHA = "admin"
 BANCO = "restau_calabresa"
 
