@@ -47,6 +47,3 @@ Digite a opção desejada: """
 if __name__ == "__main__":
     __main()
 
-
-
-#
