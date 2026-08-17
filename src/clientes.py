@@ -26,7 +26,7 @@ def cadastrar_cliente():
     print("\n----- CADASTRAR CLIENTE -----")
     nome = input("Digite o nome do cliente: ")
     documento = input("Digite o documento: ")
-    telefone = input("Digite o telefone: ")
+    telefone = input("digite o Telefone: ")
 
     conexao = conectar()
     cursor = conexao.cursor()

@@ -38,7 +38,7 @@ def cadastrar():
     )
 
     conexao.commit()
-    print(f"\n[OK] Bebida cadastrado com id: {cursor.lastrowid}")
+    print(f"\n[OK] bebida cadastrado com id: {cursor.lastrowid}")
     
     cursor.close()
     conexao.close()
