@@ -1,9 +1,11 @@
 from funcionario import menu_funcionario
+from pratos_feitos import menu_pratos_feitos
+from clientes import menu_clientes
 import os
 
 
 def __main():
-    os.system("cls")
+    os.system("clear")
     mensagem = """MENU:
 1 - Funcionarios
 2 - Pratos feitos
@@ -17,16 +19,24 @@ Digite a opção desejada: """
     opcao = int(input(mensagem))
 
     while opcao != 10:
-        os.system("cls")
+
+        os.system("clear")
+
         if opcao == 1:
             menu_funcionario()
+        elif opcao == 2:
+            menu_pratos_feitos()
+        elif opcao == 3:
+            menu_clientes()
         elif opcao != 10:
+
             print("Opção invalida")
+
         print("\n")
 
         opcao = int(input(mensagem))
 
-    os.system("cls")
+    os.system("clear")
 
 if __name__ == "__main__":
     __main()

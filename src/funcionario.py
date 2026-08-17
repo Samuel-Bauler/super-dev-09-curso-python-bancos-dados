@@ -6,13 +6,13 @@ import os
 
 HOST = "127.0.0.1"
 PORTA = 3306
-USUARIO = "root"
+USUARIO = "dev"
 SENHA = "admin"
 BANCO = "restau_calabresa"
 
 
 def conectar():
-    """Abre a conecão com o banco de dados"""
+    """Abre a conexão com o banco de dados"""
     conexao = connector.connect(
         host=HOST,
         port=PORTA,
@@ -88,6 +88,10 @@ def listar_funcionarios():
         )
     print("-"*100)
 
+    conexao.close()
+    cursor.close()
+
+
 
 def excluir_funcionario():
     listar_funcionarios()
@@ -154,7 +158,7 @@ Digite a opção desejada: """
     opcao = int(input(mensagem))
 
     while opcao != 5:
-        os.system("cls")
+        os.system("clear")
         if opcao == 1:
             listar_funcionarios()
         elif opcao == 2:
@@ -169,4 +173,4 @@ Digite a opção desejada: """
     
 
         opcao = int(input(mensagem))
-    os.system("cls")
+    os.system("clear")
